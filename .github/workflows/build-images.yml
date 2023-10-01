@@ -38,7 +38,7 @@ jobs:
         id: extract_branch
 
       - name: Login to Docker registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           username: giskardai
           password: ${{ secrets.DOCKERHUB_TOKEN }}
